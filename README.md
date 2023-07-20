@@ -72,7 +72,7 @@ Select view.php
 It appears we are at an application in which we can search files if we give the website proper credentials. We know that the 
 machine we are dealing with is a Linux Debian. Let's see if we can insert linux commands into the webapp. 
 
-### Philosopgy
+# Resource Development / Initial Access
 
 Linux, Microsoft, HTML, RUBY, etc runs on code. When injecting code use functions that will close a code so you can start your own.
 For example, if you look at HTML code you can see a pattern of <> "" etc. These are used to close comment make references etc. These 
@@ -90,7 +90,9 @@ nothing...
 
 ![CRS_13](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/f6f038ff-6b7f-4d9c-a69f-14c7a647c620)
 
-Big Success!
+Big Success! our " & id " command shot out the users id and its permissions.
+
+UID=0 is root be aware for that.
 
 ![CRS_14](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/419b45e2-93f0-475d-9f9d-f9d1550544b7)
 ![CRS_15](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/e29402b2-5791-420a-a580-ba41b6da867c)
