@@ -64,9 +64,33 @@ There are a few hits, but one paths stands out from the others. The "console" pa
 http://192.168.122.47/console/
 
 ![CRS_10](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/e0c10cd3-df64-4ec0-a42f-b6c059852590)
+
+Select view.php
+
 ![CRS_11](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/6a2bce9a-d7ec-49f5-96fa-2fd67dafa56f)
+
+It appears we are at an application in which we can search files if we give the website proper credentials. We know that the 
+machine we are dealing with is a Linux Debian. Let's see if we can insert linux commands into the webapp. 
+
+### Philosopgy
+
+Linux, Microsoft, HTML, RUBY, etc runs on code. When injecting code use functions that will close a code so you can start your own.
+For example, if you look at HTML code you can see a pattern of <> "" etc. These are used to close comment make references etc. These 
+should be something to foucs on if you are injecting a html service. We are assuming the application allows us to talk to the linux 
+server directly. So we will use functions such as " ; & | " etc.
+
+- & is a function to run next
+- ; is a function to run on a seperate line
+
+Lets try and inject some commands in the boxes.
+
 ![CRS_12](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/3c0e7622-676a-4d5b-b7c3-906fbeb3e8d3)
+
+nothing...
+
 ![CRS_13](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/f6f038ff-6b7f-4d9c-a69f-14c7a647c620)
+
+Big Success!
 ![CRS_14](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/419b45e2-93f0-475d-9f9d-f9d1550544b7)
 ![CRS_15](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/e29402b2-5791-420a-a580-ba41b6da867c)
 ![CRS_16](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/0cfc6893-cb50-4ffb-b2e6-1d3b3c8a9115)
