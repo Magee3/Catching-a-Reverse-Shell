@@ -1,8 +1,17 @@
 # Catching-a-Reverse-Shell
 
+# Stage 1: Topology
 
+We are acting as Kali4 and our target is App1. Our networks are segmented but, our routers share a common switch.
+Our goal is to get our target to send us a shell, this is called a reverse shell.
 ![CRS_1](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/b7129606-92ef-4b2e-a1cf-98b409265d07)
+
+The only information we are given is the ip of the router. Lets see what we can find out about the network.
 ![CRS_2](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/bd1950ed-b6d2-4c5d-a4ce-5a54790ac923)
+
+# Stage 2: 
+
+This is optional but, you can create a file with a list of IP's and tell nmap to scan the list using the " -iL " switch.
 ![CRS_3](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/bebaaa89-1217-404d-8315-6a8749ba3115)
 ![CRS_4](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/6349788c-7ce4-4b39-927f-d0c02aa41612)
 ![CRS_5](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/3cda74d4-71b5-4c58-9f36-d9162f1e3ea1)
