@@ -102,13 +102,18 @@ We must first port forward the shell by changing our firewall settings.
 
 ![CRS_14](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/419b45e2-93f0-475d-9f9d-f9d1550544b7)
 
+We enter our routers IP into the browser
+
 ![CRS_15](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/e29402b2-5791-420a-a580-ba41b6da867c)
 
+Log In and head into the NAT rules.
+
+![CRS_16](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/fba44514-3059-4d1e-ab6b-e098699f7c82)
+
+![CRS_17](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/4fe3c2b1-67f7-4676-bb10-c2a083bb1e50)
 
 
-![CRS_16](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/0cfc6893-cb50-4ffb-b2e6-1d3b3c8a9115)
 
-![CRS_17](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/6324bd3f-d1c0-4d7c-8b5e-97d75a19e7ee)
 ![CRS_18](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/a0cab823-6827-4265-9b48-344e12cfda30)
 ![CRS_19](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/0e8ebe54-28f7-4d2a-9332-c68c1b4b45bc)
 ![CRS_20](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/890835be-3629-4e67-a924-fb41650a8a46)
