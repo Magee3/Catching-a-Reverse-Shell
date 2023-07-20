@@ -94,9 +94,20 @@ Big Success! our " & id " command shot out the users id and its permissions.
 
 UID=0 is root be aware for that.
 
+This is another vulnerability called "command injection". The designer of the website has failed to sanitize or block the
+use of special characters.
+
+Since we have the ability to type commands into the target computer that gives us the ability to send a reverse shell.
+We must first port forward the shell by changing our firewall settings.
+
 ![CRS_14](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/419b45e2-93f0-475d-9f9d-f9d1550544b7)
+
 ![CRS_15](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/e29402b2-5791-420a-a580-ba41b6da867c)
+
+
+
 ![CRS_16](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/0cfc6893-cb50-4ffb-b2e6-1d3b3c8a9115)
+
 ![CRS_17](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/6324bd3f-d1c0-4d7c-8b5e-97d75a19e7ee)
 ![CRS_18](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/a0cab823-6827-4265-9b48-344e12cfda30)
 ![CRS_19](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/0e8ebe54-28f7-4d2a-9332-c68c1b4b45bc)
