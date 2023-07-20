@@ -120,7 +120,12 @@ When we are sending the payload for a reverse shell we are telling the target to
 
 ![CRS_17](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/4fe3c2b1-67f7-4676-bb10-c2a083bb1e50)
 
+Now we grab our gloves and get ready for the reverse shell catch by running
 
+- nc -lvp 2077   
+- l = listener
+- v = verbose
+- p = port
 
 ![CRS_18](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/a0cab823-6827-4265-9b48-344e12cfda30)
 ![CRS_19](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/0e8ebe54-28f7-4d2a-9332-c68c1b4b45bc)
