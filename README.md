@@ -110,6 +110,14 @@ Log In and head into the NAT rules.
 
 ![CRS_16](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/fba44514-3059-4d1e-ab6b-e098699f7c82)
 
+Make sure you set the destination type to "WAN". You can change the port range to anything you want just make sure
+that it matches with the redirect port. Use your own IP for the redirection and save.
+
+This is our reverse shell firewall rule.
+We are telling OUR firewall to open port 2077 and any traffic you get that is 2077 redirect to "my" IP or computer.
+
+When we are sending the payload for a reverse shell we are telling the target to send "US" a request to connect.
+
 ![CRS_17](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/4fe3c2b1-67f7-4676-bb10-c2a083bb1e50)
 
 
