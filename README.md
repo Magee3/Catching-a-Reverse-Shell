@@ -137,8 +137,15 @@ make sure you are sending the shell to "your" router, the router will send the s
 is running you will catch the shell.
 
 ![CRS_19](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/0e8ebe54-28f7-4d2a-9332-c68c1b4b45bc)
+
+Connected....
+
 ![CRS_20](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/890835be-3629-4e67-a924-fb41650a8a46)
+
+Run: whoami
 ![CRS_21](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/b333e956-85c6-4917-8920-0c100adb05fc)
+
+# Shell Upgrade
 ![CRS_22](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/b6c6921b-cd56-4342-8353-cb58c1539dbf)
 ![CRS_23](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/25ac8c87-45ef-41f0-9682-3a7974743d9a)
 ![CRS_24](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/322d08f2-fd72-4155-9b10-3f3311eef59b)
