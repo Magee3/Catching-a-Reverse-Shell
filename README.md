@@ -32,10 +32,37 @@ BROWSER BROWSER BROWSER. Type the targets IP into your browser.
 Ex: http://192.168.122.47
 
 ![CRS_5](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/3cda74d4-71b5-4c58-9f36-d9162f1e3ea1)
+
+The site appears to be bare, empty, useless. But we are HACKERS! we theres always a way into the "mainframe"
+Lets see if theres anymore information on the back end. Use right click and hit "view page source" or press 
+"ctrl+u" if you're cool.
+
 ![CRS_6](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/fec3d9a1-c2c2-4744-b229-103508477788)
+
+This is how the page is made up. We see the page is written using html and designed with css. You can click around and 
+be Indianna but I clicked this fancy .png link.
+
 ![CRS_7](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/1a6f8f82-cd37-41b2-9629-7dd4cbeb3d97)
+
+We found something!!! This is a $1 vulnerability, D Tier, common, but it's something. The vulnerability is "Version Disclosure
+Vulnerability". We now know that App1 is a Linux server running on Apache version 2.4.52. This is a low vulnerability but, this
+is a step in finding exploits against the server. I mean you can try it your self. Copy and paste this in google:
+
+Apache Version 2.4 exploits
+
+Moving on...
+
 ![CRS_8](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/419cbc3c-4754-4f46-b472-af392a0f52f3)
+
+We are still trying to gather more information on the site. The last thing we will do is search to see if there are any hidden
+paths in the site. After all, websites are directories, files, media, and code. We will run dirbuster to find any hidden paths.
+
 ![CRS_9](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/c6d3d9d4-6537-473c-b101-a0e6bbee679a)
+
+There are a few hits, but one paths stands out from the others. The "console" path. We will add it to the targets url. 
+
+http://192.168.122.47/console/
+
 ![CRS_10](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/e0c10cd3-df64-4ec0-a42f-b6c059852590)
 ![CRS_11](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/6a2bce9a-d7ec-49f5-96fa-2fd67dafa56f)
 ![CRS_12](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/3c0e7622-676a-4d5b-b7c3-906fbeb3e8d3)
