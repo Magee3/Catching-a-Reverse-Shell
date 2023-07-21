@@ -156,7 +156,46 @@ Run: python3 -c 'import pty; pty.spawn("/bin/bash")'
 This creates a more interractible shell.
 
 ![CRS_22](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/b6c6921b-cd56-4342-8353-cb58c1539dbf)
+
+Press: ctrl+z
+
+this will take you back to your original terminal. Then run:
+
+stty raw -echo; fg
+
+This gives you the ability to send inputs directly into the shell without it going through your terminal first. Basically
+you can ctrl+c safely now.
+
 ![CRS_23](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/25ac8c87-45ef-41f0-9682-3a7974743d9a)
+
+We will now run:
+
+export TERM=xterm-256color
+
+export SHELL=/bin/bash
+
+The first command give you the ability to "nano" files, the other command sets bash as the default shell. You can check
+your TERMinal and Shell status by running.
+
+$TERM && $SHELL
+
 ![CRS_24](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/322d08f2-fd72-4155-9b10-3f3311eef59b)
+
+In "YOUR LOCAL" terminal run:
+
+echo $TERM && tput lines && tput cols
+
+this outputs your terminal size. Note the two numbers.
+
 ![CRS_25](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/a9c2cffb-6afd-4dbe-a14a-c753433ca4ef)
+
+In the reverse shell run:
+
+stty rows 38 columns 112
+
 ![CRS_26](https://github.com/Magee3/Catching-a-Reverse-Shell/assets/134301259/78fc9ded-7706-484d-98d8-44c02b2cfc01)
+
+This matches your reverse shell terminal size with your local terminal so that texts don't overlap and you don't get 
+other funky errors.
+
+You have successfuly created a reverse shell and upgraded the shell yippieeeee!
